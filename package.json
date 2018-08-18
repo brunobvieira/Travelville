@@ -1,0 +1,23 @@
+{
+  "name": "travelville",
+  "version": "1.0.0",
+  "description": "Curso de Materialize css",
+  "main": "index.html",
+  "scripts": {
+    "compile": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/brunobeserravieira/Travelville.git"
+  },
+  "author": "Bruno Beserra Vieira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/brunobeserravieira/Travelville/issues"
+  },
+  "homepage": "https://gitlab.com/brunobeserravieira/Travelville#README",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
