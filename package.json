@@ -4,7 +4,9 @@
   "description": "Curso de Materialize css",
   "main": "index.html",
   "scripts": {
-    "compile": "gulp"
+    "sassdev": "gulp sassdev",
+    "sassprod": "gulp sassprod",
+    "watchsass": "gulp"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   "homepage": "https://gitlab.com/brunobeserravieira/Travelville#README",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1"
   }
 }
