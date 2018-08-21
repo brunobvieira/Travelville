@@ -31,7 +31,7 @@
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#seach">Search</a></li>
+                        <li><a href="#search">Search</a></li>
                         <li><a href="#popular">Popular Places</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -43,14 +43,14 @@
 
     <ul class="sidenav" id="mobile-nav">
         <li><a href="#home">Home</a></li>
-        <li><a href="#seach">Search</a></li>
+        <li><a href="#search">Search</a></li>
         <li><a href="#popular">Popular Places</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 
     <!-- SECTION HOME -->
-    <section>
+    <section id="home" class="scrollspy">
         <div class="slider">
             <ul class="slides">
                 <li>
@@ -85,7 +85,7 @@
     </section>
 
     <!-- SECTION: SEARCH-->
-    <section class="section section-search teal darken-2 white-text center">
+    <section id="search" class="section section-search teal darken-2 white-text center scrollspy">
         <div class="container">
             <div class="row">
                 <div class="col s12">
@@ -100,7 +100,7 @@
     </section>
 
     <!-- SECTION: ICON BOXES -->
-    <section class="section section-icons grey lighten-4 center">
+    <section class="section section-icons grey lighten-4 center ">
         <div class="container">
             <div class="row">
                 <div class="col s12 m4">
@@ -129,7 +129,7 @@
     </section>
 
     <!-- SECTION: POPULAR PLACES -->
-    <section class="section popular-places">
+    <section id="popular" class="section popular-places scrollspy">
         <div class="container">
             <div class="row">
                 <div class="col s12 center">
@@ -205,7 +205,7 @@
 
     <!-- SECTION GALERY -->
 
-    <section class="section section-gallery">
+    <section id="gallery" class="section section-gallery scrollspy">
         <div class="container">
             <div class="row">
                 <div class="col s12 center">
@@ -264,7 +264,7 @@
 
     <!-- SECTION CONTACT -->
 
-    <section class="section section-contact">
+    <section id="contact" class="section section-contact scrollspy">
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
@@ -360,5 +360,11 @@
         $('.materialboxed').materialbox();
 
         $('textarea.materialize-textarea').characterCounter();
+
+        $('.scrollspy').scrollSpy({
+            getActiveElement: function (id) {
+                return $('a[href="#' + id + '"]').closest('li')[0];
+            }
+        });
     });
 </script>
